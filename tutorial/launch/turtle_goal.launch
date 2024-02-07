@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node" output="screen" />
+
+    <node pkg="tutorial" type="skeleton_turtle.py" name="turtlesim_controller" output="screen">
+    </node>
+z
+    </launch>

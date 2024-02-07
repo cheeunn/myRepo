@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ROS Launch 파일 -->
+
+<launch>
+    <!-- 첫 번째 노드: mypublisher.py 실행 -->
+    <node name="listener1" pkg="tutorial" type="mypublisher.py" respawn="true" />
+
+    <!-- 두 번째 노드: mysubscriber.py 실행, 출력을 화면에 표시 -->
+    <node name="listener2" pkg="tutorial" type="mysubscriber.py" respawn="true" output="screen" />
+</launch>

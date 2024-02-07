@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ROS Launch 파일 -->
+
+<launch>
+    <!-- 1st node :mrosbag_player -->
+    <node name="rosbag_player" pkg="tutorial" type=".py" respawn="true" />
+
+    <!--2nd node : imu_euler.py 실행 -->
+    <node name="imu_parser_node" pkg="tutorial" type="imu_euler.py" respawn="true" output="screen" />
+
+    <!-- 3rd node: rostopic echo-->
+    <node name="listenrostopic_echoer1" pkg="tutorial" type="mypublisher.py" respawn="true" />
+
+</launch>
